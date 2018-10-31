@@ -74,9 +74,9 @@ new Vue({
 
       for(var i = 0; i < this.original.length; i++){
         var code = this.original.charCodeAt(i);
-        if ((code_A <= code && code < code_N) || (code_a <= code && code < code_n)){
+        if ((code_A <= code && code <= code_N) || (code_a <= code && code <= code_n)){
           code = code + seed;
-        } else if((code_N <= code && code <= code_Z) || (code_n <= code && code <= code_z)){
+        } else if((code_N <= code && code < code_Z) || (code_n <= code && code < code_z)){
           code = code - seed;
         }
         result += String.fromCharCode(code);
