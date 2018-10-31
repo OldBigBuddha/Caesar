@@ -1,0 +1,2 @@
+# Redirect default Netlify subdomain to primary domain
+http://caesar-oji.netlify.com/* http://caesar.oldbigbuddha.net/:splat 301!
